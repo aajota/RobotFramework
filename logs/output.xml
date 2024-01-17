@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2024-01-16T17:08:24.872713" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2024-01-17T06:38:14.237827" rpa="false" schemaversion="5">
 <suite id="s1" name="Hello" source="F:\RobotQAx\projects\walkdog-robot\hello.robot">
 <test id="s1-t1" name="Deve mostrar uma mensagem de boas vindas" line="5">
 <kw name="Log To Console" owner="BuiltIn">
 <arg>Hello Robot</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2024-01-16T17:08:24.931677" elapsed="0.000999"/>
+<status status="PASS" start="2024-01-17T06:38:14.314803" elapsed="0.001995"/>
 </kw>
-<status status="PASS" start="2024-01-16T17:08:24.929677" elapsed="0.002999"/>
+<status status="PASS" start="2024-01-17T06:38:14.313800" elapsed="0.002998"/>
 </test>
 <doc>Meu primeiro teste em Robot Framework</doc>
-<status status="PASS" start="2024-01-16T17:08:24.877710" elapsed="0.056965"/>
+<status status="PASS" start="2024-01-17T06:38:14.245821" elapsed="0.073976"/>
 </suite>
 <statistics>
 <total>
