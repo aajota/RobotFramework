@@ -1,16 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2024-01-17T06:38:14.237827" rpa="false" schemaversion="5">
-<suite id="s1" name="Hello" source="F:\RobotQAx\projects\walkdog-robot\hello.robot">
-<test id="s1-t1" name="Deve mostrar uma mensagem de boas vindas" line="5">
-<kw name="Log To Console" owner="BuiltIn">
-<arg>Hello Robot</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2024-01-17T06:38:14.314803" elapsed="0.001995"/>
+<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2024-01-18T07:14:21.733941" rpa="false" schemaversion="5">
+<suite id="s1" name="Home" source="F:\RobotQAx\projects\walkdog-robot\home.robot">
+<test id="s1-t1" name="Home page deve estar online" line="7">
+<kw name="New Browser" owner="Browser">
+<msg time="2024-01-18T07:14:23.921079" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "F:\\RobotQAx\\projects\\walkdog-robot\\logs\\browser\\traces\\6578cb80-2328-49da-9db1-f2edc440adb9"}</msg>
+<msg time="2024-01-18T07:14:25.436148" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"F:\\RobotQAx\\projects\\walkdog-robot\\logs\\browser\\traces\\6578cb80-2328-49da-9db1-f2edc440adb9"}</msg>
+<arg>browser=chromium</arg>
+<arg>headless=False</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2024-01-18T07:14:23.920080" elapsed="1.517066"/>
 </kw>
-<status status="PASS" start="2024-01-17T06:38:14.313800" elapsed="0.002998"/>
+<kw name="New Page" owner="Browser">
+<msg time="2024-01-18T07:14:26.773323" level="INFO">Successfully initialized new page object and opened url: https://walkdog.vercel.app/</msg>
+<msg time="2024-01-18T07:14:26.773323" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>https://walkdog.vercel.app/</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2024-01-18T07:14:25.465129" elapsed="1.309194"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-01-18T07:14:26.934224" level="INFO">Text: 'Cuidado e diversão em cada passo'</msg>
+<arg>h1</arg>
+<arg>equal</arg>
+<arg>Cuidado e diversão em cada passo</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-01-18T07:14:26.791312" elapsed="0.142912"/>
+</kw>
+<kw name="Take Screenshot" owner="Browser">
+<msg time="2024-01-18T07:14:27.131103" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-1.png" target="_blank"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-1.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<tag>PageContent</tag>
+<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
+<status status="PASS" start="2024-01-18T07:14:26.939221" elapsed="0.191882"/>
+</kw>
+<status status="PASS" start="2024-01-18T07:14:23.914083" elapsed="3.218019"/>
 </test>
-<doc>Meu primeiro teste em Robot Framework</doc>
-<status status="PASS" start="2024-01-17T06:38:14.245821" elapsed="0.073976"/>
+<doc>Suite de testes da home page</doc>
+<status status="PASS" start="2024-01-18T07:14:21.737935" elapsed="5.632021"/>
 </suite>
 <statistics>
 <total>
@@ -19,7 +50,7 @@
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Hello">Hello</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="Home">Home</stat>
 </suite>
 </statistics>
 <errors>
