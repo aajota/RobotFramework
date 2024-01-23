@@ -7,8 +7,8 @@ Library    Browser
 
 Deve poder cadastrar um novo dog walker
 
-    ${name}             Set Variable        Ajota
-    ${email}            Set Variable        ajota568@gmail.com
+    ${name}             Set Variable        AJota
+    ${email}            Set Variable        ajota45568@gmail.com
     ${cpf}              Set Variable        00000014141
     ${cep}              Set Variable        04534011
     ${addressNumber}    Set Variable        2000
@@ -29,4 +29,4 @@ Deve poder cadastrar um novo dog walker
     Fill Text        css=input[name=addressNumber]        ${addressNumber}
     Fill Text        css=input[name=addressDetails]       ${addressDetails}   
 
-    Sleep    10
+    Sleep    60
