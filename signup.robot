@@ -11,8 +11,13 @@ Deve poder cadastrar um novo dog walker
     ${email}            Set Variable        ajota45568@gmail.com
     ${cpf}              Set Variable        00000014141
     ${cep}              Set Variable        04534011
+    ${addressStreet}    Set Variable        Rua Joaquim Floriano
     ${addressNumber}    Set Variable        2000
     ${addressDetails}   Set Variable        Apto34
+    ${addressDistrict}  Set Variable        Itaim Bibi
+    ${addressCityUf}    Set Variable        São Paulo/SP
+
+    
 
   
     
@@ -25,8 +30,14 @@ Deve poder cadastrar um novo dog walker
     Fill Text        css=input[name=name]                 ${name}
     Fill Text        css=input[name=email]                ${email}      
     Fill Text        css=input[name=cpf]                  ${cpf}   
-    Fill Text        css=input[name=cep]                  ${cep}  
+    Fill Text        css=input[name=cep]                  ${cep} 
+
+    click            css=input[value="Buscar CEP"][type="button"]
+    Get Property     css=input[name="addressStreet"]                  value        equal        ${addressStreet}
+    Get Property     css=input[name="addressDistrict"]                value        equal        ${addressDistrict}
+    Get Property     css=input[name="addressCityUf"]                  value        equal        ${addressCityUf}
+
     Fill Text        css=input[name=addressNumber]        ${addressNumber}
     Fill Text        css=input[name=addressDetails]       ${addressDetails}   
 
-    Sleep    60
+    Sleep    15
