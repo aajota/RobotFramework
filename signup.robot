@@ -7,7 +7,7 @@ Library    Browser
 
 Deve poder cadastrar um novo dog walker
 
-    ${name}             Set Variable        Junior
+    ${name}             Set Variable        Junior Lima
     ${email}            Set Variable        ajota45568@gmail.com
     ${cpf}              Set Variable        00000014141
     ${cep}              Set Variable        04534011
