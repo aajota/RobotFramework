@@ -1,90 +1,98 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2024-01-25T17:34:04.058123" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2024-02-01T15:15:46.746695" rpa="false" schemaversion="5">
 <suite id="s1" name="Signup" source="F:\RobotQAx\projects\walkdog-robot\signup.robot">
 <test id="s1-t1" name="Deve poder cadastrar um novo dog walker" line="8">
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2024-01-25T17:34:06.327634" level="INFO">${name} = AJota</msg>
+<msg time="2024-02-01T15:15:48.953474" level="INFO">${name} = Junior Goes</msg>
 <var>${name}</var>
-<arg>AJota</arg>
+<arg>Junior Goes</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2024-01-25T17:34:06.327634" elapsed="0.000000"/>
+<status status="PASS" start="2024-02-01T15:15:48.953474" elapsed="0.000000"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2024-01-25T17:34:06.328633" level="INFO">${email} = ajota45568@gmail.com</msg>
+<msg time="2024-02-01T15:15:48.954470" level="INFO">${email} = ajota45568@gmail.com</msg>
 <var>${email}</var>
 <arg>ajota45568@gmail.com</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2024-01-25T17:34:06.328633" elapsed="0.000000"/>
+<status status="PASS" start="2024-02-01T15:15:48.954470" elapsed="0.000000"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2024-01-25T17:34:06.329633" level="INFO">${cpf} = 00000014141</msg>
+<msg time="2024-02-01T15:15:48.955471" level="INFO">${cpf} = 00000014141</msg>
 <var>${cpf}</var>
 <arg>00000014141</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2024-01-25T17:34:06.329633" elapsed="0.000000"/>
+<status status="PASS" start="2024-02-01T15:15:48.955471" elapsed="0.000000"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2024-01-25T17:34:06.330632" level="INFO">${cep} = 04534011</msg>
+<msg time="2024-02-01T15:15:48.956470" level="INFO">${cep} = 04534011</msg>
 <var>${cep}</var>
 <arg>04534011</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2024-01-25T17:34:06.330632" elapsed="0.000000"/>
+<status status="PASS" start="2024-02-01T15:15:48.956470" elapsed="0.000000"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2024-01-25T17:34:06.330632" level="INFO">${addressStreet} = Rua Joaquim Floriano</msg>
+<msg time="2024-02-01T15:15:48.957427" level="INFO">${addressStreet} = Rua Joaquim Floriano</msg>
 <var>${addressStreet}</var>
 <arg>Rua Joaquim Floriano</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2024-01-25T17:34:06.330632" elapsed="0.000999"/>
+<status status="PASS" start="2024-02-01T15:15:48.957427" elapsed="0.000000"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2024-01-25T17:34:06.331631" level="INFO">${addressNumber} = 2000</msg>
+<msg time="2024-02-01T15:15:48.958416" level="INFO">${addressNumber} = 2000</msg>
 <var>${addressNumber}</var>
 <arg>2000</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2024-01-25T17:34:06.331631" elapsed="0.000000"/>
+<status status="PASS" start="2024-02-01T15:15:48.958416" elapsed="0.000000"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2024-01-25T17:34:06.332630" level="INFO">${addressDetails} = Apto34</msg>
+<msg time="2024-02-01T15:15:48.959363" level="INFO">${addressDetails} = Apto34</msg>
 <var>${addressDetails}</var>
 <arg>Apto34</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2024-01-25T17:34:06.332630" elapsed="0.000000"/>
+<status status="PASS" start="2024-02-01T15:15:48.959363" elapsed="0.000000"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2024-01-25T17:34:06.333631" level="INFO">${addressDistrict} = Itaim Bibi</msg>
+<msg time="2024-02-01T15:15:48.960307" level="INFO">${addressDistrict} = Itaim Bibi</msg>
 <var>${addressDistrict}</var>
 <arg>Itaim Bibi</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2024-01-25T17:34:06.332630" elapsed="0.001001"/>
+<status status="PASS" start="2024-02-01T15:15:48.960307" elapsed="0.000000"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2024-01-25T17:34:06.333631" level="INFO">${addressCityUf} = São Paulo/SP</msg>
+<msg time="2024-02-01T15:15:48.961281" level="INFO">${addressCityUf} = São Paulo/SP</msg>
 <var>${addressCityUf}</var>
 <arg>São Paulo/SP</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2024-01-25T17:34:06.333631" elapsed="0.000000"/>
+<status status="PASS" start="2024-02-01T15:15:48.961281" elapsed="0.000000"/>
 </kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-02-01T15:15:48.962655" level="INFO">${cnh} = toretto.jpg</msg>
+<var>${cnh}</var>
+<arg>toretto.jpg</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-02-01T15:15:48.962655" elapsed="0.000000"/>
+</kw>
+<kw name="Go to signup page">
 <kw name="New Browser" owner="Browser">
-<msg time="2024-01-25T17:34:06.335629" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "F:\\RobotQAx\\projects\\walkdog-robot\\logs\\browser\\traces\\ec47cef1-f884-40ce-82f7-3652f069b9a1"}</msg>
-<msg time="2024-01-25T17:35:06.800793" level="INFO">Keyword 'Take Screenshot  fail-screenshot-{index}' could not be run on failure:
+<msg time="2024-02-01T15:15:48.964625" level="INFO">{"browser": "chromium", "headless": true, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "F:\\RobotQAx\\projects\\walkdog-robot\\logs\\browser\\traces\\d999a3a6-95d3-40f2-8b05-24706b71138c"}</msg>
+<msg time="2024-02-01T15:16:20.996629" level="INFO">Keyword 'Take Screenshot  fail-screenshot-{index}' could not be run on failure:
 Error: Tried to take screenshot, but no page was open.</msg>
-<msg time="2024-01-25T17:35:06.800793" level="INFO">See also file:///F:/RobotQAx/projects/walkdog-robot/logs/playwright-log.txt for additional details.</msg>
-<msg time="2024-01-25T17:35:06.801792" level="FAIL">Error: browserType.launch: Timeout 30000ms exceeded.
+<msg time="2024-02-01T15:16:20.996629" level="INFO">See also file:///F:/RobotQAx/projects/walkdog-robot/logs/playwright-log.txt for additional details.</msg>
+<msg time="2024-02-01T15:16:20.997628" level="FAIL">Error: browserType.launch: Timeout 30000ms exceeded.
 Call log:
-  [2m- &lt;launching&gt; F:\python312\Lib\site-packages\Browser\wrapper\node_modules\playwright-core\.local-browsers\chromium-1091\chrome-win\chrome.exe --disable-field-trial-config --disable-background-networking --enable-features=NetworkService,NetworkServiceInProcess --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=ImprovedCookieControls,LazyFrameLoading,GlobalMediaControls,DestroyProfileOnBrowserClose,MediaRouter,DialMediaRouteProvider,AcceptCHFrame,AutoExpandDetailsElement,CertificateTransparencyComponentUpdater,AvoidUnnecessaryBeforeUnloadCheckSync,Translate,HttpsUpgrades --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --enable-automation --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --no-sandbox --user-data-dir=C:\Users\AJota\AppData\Local\Temp\playwright_chromiumdev_profile-eNkKAS --remote-debugging-pipe --no-startup-window[22m
-[2m  - &lt;launched&gt; pid=12444[22m
+  [2m- &lt;launching&gt; F:\python312\Lib\site-packages\Browser\wrapper\node_modules\playwright-core\.local-browsers\chromium-1091\chrome-win\chrome.exe --disable-field-trial-config --disable-background-networking --enable-features=NetworkService,NetworkServiceInProcess --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=ImprovedCookieControls,LazyFrameLoading,GlobalMediaControls,DestroyProfileOnBrowserClose,MediaRouter,DialMediaRouteProvider,AcceptCHFrame,AutoExpandDetailsElement,CertificateTransparencyComponentUpdater,AvoidUnnecessaryBeforeUnloadCheckSync,Translate,HttpsUpgrades --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --enable-automation --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --headless --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --no-sandbox --user-data-dir=C:\Users\AJota\AppData\Local\Temp\playwright_chromiumdev_profile-V524Ow --remote-debugging-pipe --no-startup-window[22m
+[2m  - &lt;launched&gt; pid=15272[22m
 
 Tip: Use "Set Browser Timeout" for increasing the timeout or double check your locator as the targeted element(s) couldn't be found.</msg>
 <arg>browser=chromium</arg>
-<arg>headless=False</arg>
+<arg>headless=True</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<status status="FAIL" start="2024-01-25T17:34:06.334630" elapsed="60.473158">Error: browserType.launch: Timeout 30000ms exceeded.
+<status status="FAIL" start="2024-02-01T15:15:48.963623" elapsed="40.020752">Error: browserType.launch: Timeout 30000ms exceeded.
 Call log:
-  [2m- &lt;launching&gt; F:\python312\Lib\site-packages\Browser\wrapper\node_modules\playwright-core\.local-browsers\chromium-1091\chrome-win\chrome.exe --disable-field-trial-config --disable-background-networking --enable-features=NetworkService,NetworkServiceInProcess --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=ImprovedCookieControls,LazyFrameLoading,GlobalMediaControls,DestroyProfileOnBrowserClose,MediaRouter,DialMediaRouteProvider,AcceptCHFrame,AutoExpandDetailsElement,CertificateTransparencyComponentUpdater,AvoidUnnecessaryBeforeUnloadCheckSync,Translate,HttpsUpgrades --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --enable-automation --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --no-sandbox --user-data-dir=C:\Users\AJota\AppData\Local\Temp\playwright_chromiumdev_profile-eNkKAS --remote-debugging-pipe --no-startup-window[22m
-[2m  - &lt;launched&gt; pid=12444[22m
+  [2m- &lt;launching&gt; F:\python312\Lib\site-packages\Browser\wrapper\node_modules\playwright-core\.local-browsers\chromium-1091\chrome-win\chrome.exe --disable-field-trial-config --disable-background-networking --enable-features=NetworkService,NetworkServiceInProcess --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=ImprovedCookieControls,LazyFrameLoading,GlobalMediaControls,DestroyProfileOnBrowserClose,MediaRouter,DialMediaRouteProvider,AcceptCHFrame,AutoExpandDetailsElement,CertificateTransparencyComponentUpdater,AvoidUnnecessaryBeforeUnloadCheckSync,Translate,HttpsUpgrades --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --enable-automation --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --headless --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --no-sandbox --user-data-dir=C:\Users\AJota\AppData\Local\Temp\playwright_chromiumdev_profile-V524Ow --remote-debugging-pipe --no-startup-window[22m
+[2m  - &lt;launched&gt; pid=15272[22m
 
 Tip: Use "Set Browser Timeout" for increasing the timeout or double check your locator as the targeted element(s) couldn't be found.</status>
 </kw>
@@ -93,7 +101,7 @@ Tip: Use "Set Browser Timeout" for increasing the timeout or double check your l
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="NOT RUN" start="2024-01-25T17:35:06.808788" elapsed="0.000000"/>
+<status status="NOT RUN" start="2024-02-01T15:16:28.985377" elapsed="0.000000"/>
 </kw>
 <kw name="Wait For Elements State" owner="Browser">
 <arg>form h1</arg>
@@ -102,7 +110,7 @@ Tip: Use "Set Browser Timeout" for increasing the timeout or double check your l
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="NOT RUN" start="2024-01-25T17:35:06.810049" elapsed="0.000000"/>
+<status status="NOT RUN" start="2024-02-01T15:16:28.985377" elapsed="0.000000"/>
 </kw>
 <kw name="Get Text" owner="Browser">
 <arg>form h1</arg>
@@ -112,118 +120,44 @@ Tip: Use "Set Browser Timeout" for increasing the timeout or double check your l
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="NOT RUN" start="2024-01-25T17:35:06.810503" elapsed="0.000000"/>
+<status status="NOT RUN" start="2024-02-01T15:16:28.985377" elapsed="0.000000"/>
 </kw>
-<kw name="Fill Text" owner="Browser">
-<arg>css=input[name=name]</arg>
-<arg>${name}</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="NOT RUN" start="2024-01-25T17:35:06.811503" elapsed="0.000000"/>
-</kw>
-<kw name="Fill Text" owner="Browser">
-<arg>css=input[name=email]</arg>
-<arg>${email}</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="NOT RUN" start="2024-01-25T17:35:06.811503" elapsed="0.000000"/>
-</kw>
-<kw name="Fill Text" owner="Browser">
-<arg>css=input[name=cpf]</arg>
-<arg>${cpf}</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="NOT RUN" start="2024-01-25T17:35:06.812510" elapsed="0.000000"/>
-</kw>
-<kw name="Fill Text" owner="Browser">
-<arg>css=input[name=cep]</arg>
-<arg>${cep}</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="NOT RUN" start="2024-01-25T17:35:06.812510" elapsed="0.000000"/>
-</kw>
-<kw name="Click" owner="Browser">
-<arg>css=input[value="Buscar CEP"][type="button"]</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="NOT RUN" start="2024-01-25T17:35:06.813506" elapsed="0.000000"/>
-</kw>
-<kw name="Get Property" owner="Browser">
-<arg>css=input[name="addressStreet"]</arg>
-<arg>value</arg>
-<arg>equal</arg>
-<arg>${addressStreet}</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns the ``property`` of the element found by ``selector``.</doc>
-<status status="NOT RUN" start="2024-01-25T17:35:06.813506" elapsed="0.000000"/>
-</kw>
-<kw name="Get Property" owner="Browser">
-<arg>css=input[name="addressDistrict"]</arg>
-<arg>value</arg>
-<arg>equal</arg>
-<arg>${addressDistrict}</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns the ``property`` of the element found by ``selector``.</doc>
-<status status="NOT RUN" start="2024-01-25T17:35:06.813506" elapsed="0.000000"/>
-</kw>
-<kw name="Get Property" owner="Browser">
-<arg>css=input[name="addressCityUf"]</arg>
-<arg>value</arg>
-<arg>equal</arg>
-<arg>${addressCityUf}</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns the ``property`` of the element found by ``selector``.</doc>
-<status status="NOT RUN" start="2024-01-25T17:35:06.814506" elapsed="0.000000"/>
-</kw>
-<kw name="Fill Text" owner="Browser">
-<arg>css=input[name=addressNumber]</arg>
-<arg>${addressNumber}</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="NOT RUN" start="2024-01-25T17:35:06.814506" elapsed="0.000000"/>
-</kw>
-<kw name="Fill Text" owner="Browser">
-<arg>css=input[name=addressDetails]</arg>
-<arg>${addressDetails}</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="NOT RUN" start="2024-01-25T17:35:06.814506" elapsed="0.000000"/>
-</kw>
-<kw name="Upload File By Selector" owner="Browser">
-<arg>css=input[type=file]</arg>
-<arg>${EXECDIR}/toretto.jpg</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Uploads file from `path` to file input element matched by selector.</doc>
-<status status="NOT RUN" start="2024-01-25T17:35:06.815504" elapsed="0.000000"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<arg>60</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" start="2024-01-25T17:35:06.815504" elapsed="0.000000"/>
-</kw>
-<status status="FAIL" start="2024-01-25T17:34:06.322637" elapsed="60.493868">Error: browserType.launch: Timeout 30000ms exceeded.
+<status status="FAIL" start="2024-02-01T15:15:48.963623" elapsed="40.021754">Error: browserType.launch: Timeout 30000ms exceeded.
 Call log:
-  [2m- &lt;launching&gt; F:\python312\Lib\site-packages\Browser\wrapper\node_modules\playwright-core\.local-browsers\chromium-1091\chrome-win\chrome.exe --disable-field-trial-config --disable-background-networking --enable-features=NetworkService,NetworkServiceInProcess --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=ImprovedCookieControls,LazyFrameLoading,GlobalMediaControls,DestroyProfileOnBrowserClose,MediaRouter,DialMediaRouteProvider,AcceptCHFrame,AutoExpandDetailsElement,CertificateTransparencyComponentUpdater,AvoidUnnecessaryBeforeUnloadCheckSync,Translate,HttpsUpgrades --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --enable-automation --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --no-sandbox --user-data-dir=C:\Users\AJota\AppData\Local\Temp\playwright_chromiumdev_profile-eNkKAS --remote-debugging-pipe --no-startup-window[22m
-[2m  - &lt;launched&gt; pid=12444[22m
+  [2m- &lt;launching&gt; F:\python312\Lib\site-packages\Browser\wrapper\node_modules\playwright-core\.local-browsers\chromium-1091\chrome-win\chrome.exe --disable-field-trial-config --disable-background-networking --enable-features=NetworkService,NetworkServiceInProcess --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=ImprovedCookieControls,LazyFrameLoading,GlobalMediaControls,DestroyProfileOnBrowserClose,MediaRouter,DialMediaRouteProvider,AcceptCHFrame,AutoExpandDetailsElement,CertificateTransparencyComponentUpdater,AvoidUnnecessaryBeforeUnloadCheckSync,Translate,HttpsUpgrades --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --enable-automation --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --headless --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --no-sandbox --user-data-dir=C:\Users\AJota\AppData\Local\Temp\playwright_chromiumdev_profile-V524Ow --remote-debugging-pipe --no-startup-window[22m
+[2m  - &lt;launched&gt; pid=15272[22m
+
+Tip: Use "Set Browser Timeout" for increasing the timeout or double check your locator as the targeted element(s) couldn't be found.</status>
+</kw>
+<kw name="Fill signup form">
+<arg>${name}</arg>
+<arg>${email}</arg>
+<arg>${cpf}</arg>
+<arg>${cep}</arg>
+<arg>${addressStreet}</arg>
+<arg>${addressDistrict}</arg>
+<arg>${addressCityUf}</arg>
+<arg>${addressNumber}</arg>
+<arg>${addressDetails}</arg>
+<arg>${cnh}</arg>
+<status status="NOT RUN" start="2024-02-01T15:16:28.986377" elapsed="0.000996"/>
+</kw>
+<kw name="Submit signup form">
+<status status="NOT RUN" start="2024-02-01T15:16:28.987373" elapsed="0.000000"/>
+</kw>
+<kw name="Popup should be">
+<arg>Recebemos o seu cadastro e em breve retornaremos o contato.</arg>
+<status status="NOT RUN" start="2024-02-01T15:16:28.988375" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-02-01T15:15:48.947478" elapsed="40.040897">Error: browserType.launch: Timeout 30000ms exceeded.
+Call log:
+  [2m- &lt;launching&gt; F:\python312\Lib\site-packages\Browser\wrapper\node_modules\playwright-core\.local-browsers\chromium-1091\chrome-win\chrome.exe --disable-field-trial-config --disable-background-networking --enable-features=NetworkService,NetworkServiceInProcess --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=ImprovedCookieControls,LazyFrameLoading,GlobalMediaControls,DestroyProfileOnBrowserClose,MediaRouter,DialMediaRouteProvider,AcceptCHFrame,AutoExpandDetailsElement,CertificateTransparencyComponentUpdater,AvoidUnnecessaryBeforeUnloadCheckSync,Translate,HttpsUpgrades --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --enable-automation --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --headless --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --no-sandbox --user-data-dir=C:\Users\AJota\AppData\Local\Temp\playwright_chromiumdev_profile-V524Ow --remote-debugging-pipe --no-startup-window[22m
+[2m  - &lt;launched&gt; pid=15272[22m
 
 Tip: Use "Set Browser Timeout" for increasing the timeout or double check your locator as the targeted element(s) couldn't be found.</status>
 </test>
 <doc>Suite de testes de cadastro de dog walker</doc>
-<status status="FAIL" start="2024-01-25T17:34:04.060122" elapsed="62.807354"/>
+<status status="FAIL" start="2024-02-01T15:15:46.749693" elapsed="42.291473"/>
 </suite>
 <statistics>
 <total>
