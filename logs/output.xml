@@ -1,118 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2024-02-01T15:15:46.746695" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2024-02-02T06:09:02.671872" rpa="false" schemaversion="5">
 <suite id="s1" name="Signup" source="F:\RobotQAx\projects\walkdog-robot\signup.robot">
 <test id="s1-t1" name="Deve poder cadastrar um novo dog walker" line="8">
-<kw name="Set Variable" owner="BuiltIn">
-<msg time="2024-02-01T15:15:48.953474" level="INFO">${name} = Junior Goes</msg>
-<var>${name}</var>
-<arg>Junior Goes</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2024-02-01T15:15:48.953474" elapsed="0.000000"/>
-</kw>
-<kw name="Set Variable" owner="BuiltIn">
-<msg time="2024-02-01T15:15:48.954470" level="INFO">${email} = ajota45568@gmail.com</msg>
-<var>${email}</var>
-<arg>ajota45568@gmail.com</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2024-02-01T15:15:48.954470" elapsed="0.000000"/>
-</kw>
-<kw name="Set Variable" owner="BuiltIn">
-<msg time="2024-02-01T15:15:48.955471" level="INFO">${cpf} = 00000014141</msg>
-<var>${cpf}</var>
-<arg>00000014141</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2024-02-01T15:15:48.955471" elapsed="0.000000"/>
-</kw>
-<kw name="Set Variable" owner="BuiltIn">
-<msg time="2024-02-01T15:15:48.956470" level="INFO">${cep} = 04534011</msg>
-<var>${cep}</var>
-<arg>04534011</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2024-02-01T15:15:48.956470" elapsed="0.000000"/>
-</kw>
-<kw name="Set Variable" owner="BuiltIn">
-<msg time="2024-02-01T15:15:48.957427" level="INFO">${addressStreet} = Rua Joaquim Floriano</msg>
-<var>${addressStreet}</var>
-<arg>Rua Joaquim Floriano</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2024-02-01T15:15:48.957427" elapsed="0.000000"/>
-</kw>
-<kw name="Set Variable" owner="BuiltIn">
-<msg time="2024-02-01T15:15:48.958416" level="INFO">${addressNumber} = 2000</msg>
-<var>${addressNumber}</var>
-<arg>2000</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2024-02-01T15:15:48.958416" elapsed="0.000000"/>
-</kw>
-<kw name="Set Variable" owner="BuiltIn">
-<msg time="2024-02-01T15:15:48.959363" level="INFO">${addressDetails} = Apto34</msg>
-<var>${addressDetails}</var>
-<arg>Apto34</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2024-02-01T15:15:48.959363" elapsed="0.000000"/>
-</kw>
-<kw name="Set Variable" owner="BuiltIn">
-<msg time="2024-02-01T15:15:48.960307" level="INFO">${addressDistrict} = Itaim Bibi</msg>
-<var>${addressDistrict}</var>
-<arg>Itaim Bibi</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2024-02-01T15:15:48.960307" elapsed="0.000000"/>
-</kw>
-<kw name="Set Variable" owner="BuiltIn">
-<msg time="2024-02-01T15:15:48.961281" level="INFO">${addressCityUf} = São Paulo/SP</msg>
-<var>${addressCityUf}</var>
-<arg>São Paulo/SP</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2024-02-01T15:15:48.961281" elapsed="0.000000"/>
-</kw>
-<kw name="Set Variable" owner="BuiltIn">
-<msg time="2024-02-01T15:15:48.962655" level="INFO">${cnh} = toretto.jpg</msg>
-<var>${cnh}</var>
-<arg>toretto.jpg</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2024-02-01T15:15:48.962655" elapsed="0.000000"/>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2024-02-02T06:09:05.066398" level="INFO">${dog_walker} = {'name': 'Ajota', 'email': 'ajteste@gmail.com', 'cpf': '00000014141', 'cep': '04534011', 'street': 'Rua Joaquim Floriano', 'number': '2000', 'details': 'Apto34', 'district': 'Itaim Bibi', 'cityUf': 'S...</msg>
+<var>${dog_walker}</var>
+<arg>name=Ajota</arg>
+<arg>email=ajteste@gmail.com</arg>
+<arg>cpf=00000014141</arg>
+<arg>cep=04534011</arg>
+<arg>street=Rua Joaquim Floriano</arg>
+<arg>number=2000</arg>
+<arg>details=Apto34</arg>
+<arg>district=Itaim Bibi</arg>
+<arg>cityUf=São Paulo/SP</arg>
+<arg>cnh=toretto.jpg</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2024-02-02T06:09:05.065398" elapsed="0.001000"/>
 </kw>
 <kw name="Go to signup page">
 <kw name="New Browser" owner="Browser">
-<msg time="2024-02-01T15:15:48.964625" level="INFO">{"browser": "chromium", "headless": true, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "F:\\RobotQAx\\projects\\walkdog-robot\\logs\\browser\\traces\\d999a3a6-95d3-40f2-8b05-24706b71138c"}</msg>
-<msg time="2024-02-01T15:16:20.996629" level="INFO">Keyword 'Take Screenshot  fail-screenshot-{index}' could not be run on failure:
-Error: Tried to take screenshot, but no page was open.</msg>
-<msg time="2024-02-01T15:16:20.996629" level="INFO">See also file:///F:/RobotQAx/projects/walkdog-robot/logs/playwright-log.txt for additional details.</msg>
-<msg time="2024-02-01T15:16:20.997628" level="FAIL">Error: browserType.launch: Timeout 30000ms exceeded.
-Call log:
-  [2m- &lt;launching&gt; F:\python312\Lib\site-packages\Browser\wrapper\node_modules\playwright-core\.local-browsers\chromium-1091\chrome-win\chrome.exe --disable-field-trial-config --disable-background-networking --enable-features=NetworkService,NetworkServiceInProcess --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=ImprovedCookieControls,LazyFrameLoading,GlobalMediaControls,DestroyProfileOnBrowserClose,MediaRouter,DialMediaRouteProvider,AcceptCHFrame,AutoExpandDetailsElement,CertificateTransparencyComponentUpdater,AvoidUnnecessaryBeforeUnloadCheckSync,Translate,HttpsUpgrades --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --enable-automation --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --headless --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --no-sandbox --user-data-dir=C:\Users\AJota\AppData\Local\Temp\playwright_chromiumdev_profile-V524Ow --remote-debugging-pipe --no-startup-window[22m
-[2m  - &lt;launched&gt; pid=15272[22m
-
-Tip: Use "Set Browser Timeout" for increasing the timeout or double check your locator as the targeted element(s) couldn't be found.</msg>
+<msg time="2024-02-02T06:09:05.068396" level="INFO">{"browser": "chromium", "headless": true, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "F:\\RobotQAx\\projects\\walkdog-robot\\logs\\browser\\traces\\6558d0ab-5233-413f-9b9c-7d5189eec81e"}</msg>
+<msg time="2024-02-02T06:09:06.351607" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":true,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"F:\\RobotQAx\\projects\\walkdog-robot\\logs\\browser\\traces\\6558d0ab-5233-413f-9b9c-7d5189eec81e"}</msg>
 <arg>browser=chromium</arg>
 <arg>headless=True</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<status status="FAIL" start="2024-02-01T15:15:48.963623" elapsed="40.020752">Error: browserType.launch: Timeout 30000ms exceeded.
-Call log:
-  [2m- &lt;launching&gt; F:\python312\Lib\site-packages\Browser\wrapper\node_modules\playwright-core\.local-browsers\chromium-1091\chrome-win\chrome.exe --disable-field-trial-config --disable-background-networking --enable-features=NetworkService,NetworkServiceInProcess --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=ImprovedCookieControls,LazyFrameLoading,GlobalMediaControls,DestroyProfileOnBrowserClose,MediaRouter,DialMediaRouteProvider,AcceptCHFrame,AutoExpandDetailsElement,CertificateTransparencyComponentUpdater,AvoidUnnecessaryBeforeUnloadCheckSync,Translate,HttpsUpgrades --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --enable-automation --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --headless --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --no-sandbox --user-data-dir=C:\Users\AJota\AppData\Local\Temp\playwright_chromiumdev_profile-V524Ow --remote-debugging-pipe --no-startup-window[22m
-[2m  - &lt;launched&gt; pid=15272[22m
-
-Tip: Use "Set Browser Timeout" for increasing the timeout or double check your locator as the targeted element(s) couldn't be found.</status>
+<status status="PASS" start="2024-02-02T06:09:05.067397" elapsed="1.284210"/>
 </kw>
 <kw name="New Page" owner="Browser">
+<msg time="2024-02-02T06:09:07.101145" level="INFO">Successfully initialized new page object and opened url: https://walkdog.vercel.app/signup</msg>
+<msg time="2024-02-02T06:09:07.101145" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
 <arg>https://walkdog.vercel.app/signup</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="NOT RUN" start="2024-02-01T15:16:28.985377" elapsed="0.000000"/>
+<status status="PASS" start="2024-02-02T06:09:06.351607" elapsed="0.749538"/>
 </kw>
 <kw name="Wait For Elements State" owner="Browser">
+<msg time="2024-02-02T06:09:07.164106" level="INFO">Waited for Element with selector form h1 at state visible</msg>
 <arg>form h1</arg>
 <arg>visible</arg>
 <arg>5000</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="NOT RUN" start="2024-02-01T15:16:28.985377" elapsed="0.000000"/>
+<status status="PASS" start="2024-02-02T06:09:07.102145" elapsed="0.061961"/>
 </kw>
 <kw name="Get Text" owner="Browser">
+<msg time="2024-02-02T06:09:07.216074" level="INFO">Text: 'Faça seu cadastro'</msg>
 <arg>form h1</arg>
 <arg>equal</arg>
 <arg>Faça seu cadastro</arg>
@@ -120,53 +57,167 @@ Tip: Use "Set Browser Timeout" for increasing the timeout or double check your l
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="NOT RUN" start="2024-02-01T15:16:28.985377" elapsed="0.000000"/>
+<status status="PASS" start="2024-02-02T06:09:07.164106" elapsed="0.051968"/>
 </kw>
-<status status="FAIL" start="2024-02-01T15:15:48.963623" elapsed="40.021754">Error: browserType.launch: Timeout 30000ms exceeded.
-Call log:
-  [2m- &lt;launching&gt; F:\python312\Lib\site-packages\Browser\wrapper\node_modules\playwright-core\.local-browsers\chromium-1091\chrome-win\chrome.exe --disable-field-trial-config --disable-background-networking --enable-features=NetworkService,NetworkServiceInProcess --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=ImprovedCookieControls,LazyFrameLoading,GlobalMediaControls,DestroyProfileOnBrowserClose,MediaRouter,DialMediaRouteProvider,AcceptCHFrame,AutoExpandDetailsElement,CertificateTransparencyComponentUpdater,AvoidUnnecessaryBeforeUnloadCheckSync,Translate,HttpsUpgrades --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --enable-automation --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --headless --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --no-sandbox --user-data-dir=C:\Users\AJota\AppData\Local\Temp\playwright_chromiumdev_profile-V524Ow --remote-debugging-pipe --no-startup-window[22m
-[2m  - &lt;launched&gt; pid=15272[22m
-
-Tip: Use "Set Browser Timeout" for increasing the timeout or double check your locator as the targeted element(s) couldn't be found.</status>
+<status status="PASS" start="2024-02-02T06:09:05.067397" elapsed="2.148677"/>
 </kw>
 <kw name="Fill signup form">
-<arg>${name}</arg>
-<arg>${email}</arg>
-<arg>${cpf}</arg>
-<arg>${cep}</arg>
-<arg>${addressStreet}</arg>
-<arg>${addressDistrict}</arg>
-<arg>${addressCityUf}</arg>
-<arg>${addressNumber}</arg>
-<arg>${addressDetails}</arg>
-<arg>${cnh}</arg>
-<status status="NOT RUN" start="2024-02-01T15:16:28.986377" elapsed="0.000996"/>
+<kw name="Fill Text" owner="Browser">
+<msg time="2024-02-02T06:09:07.218072" level="INFO">Fills the text 'Ajota' in the given field.</msg>
+<arg>css=input[name=name]</arg>
+<arg>${dog_walker}[name]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2024-02-02T06:09:07.218072" elapsed="0.063963"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2024-02-02T06:09:07.283036" level="INFO">Fills the text 'ajteste@gmail.com' in the given field.</msg>
+<arg>css=input[name=email]</arg>
+<arg>${dog_walker}[email]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2024-02-02T06:09:07.282035" elapsed="0.101935"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2024-02-02T06:09:07.384969" level="INFO">Fills the text '00000014141' in the given field.</msg>
+<arg>css=input[name=cpf]</arg>
+<arg>${dog_walker}[cpf]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2024-02-02T06:09:07.384969" elapsed="0.037978"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2024-02-02T06:09:07.423952" level="INFO">Fills the text '04534011' in the given field.</msg>
+<arg>css=input[name=cep]</arg>
+<arg>${dog_walker}[cep]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2024-02-02T06:09:07.422947" elapsed="0.042974"/>
+</kw>
+<kw name="Click" owner="Browser">
+<arg>css=input[value="Buscar CEP"][type="button"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-02-02T06:09:07.465921" elapsed="0.088944"/>
+</kw>
+<kw name="Get Property" owner="Browser">
+<msg time="2024-02-02T06:09:07.951621" level="INFO">Property: 'Rua Joaquim Floriano'</msg>
+<arg>css=input[name="addressStreet"]</arg>
+<arg>value</arg>
+<arg>equal</arg>
+<arg>${dog_walker}[street]</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the ``property`` of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-02-02T06:09:07.554865" elapsed="0.396756"/>
+</kw>
+<kw name="Get Property" owner="Browser">
+<msg time="2024-02-02T06:09:07.976606" level="INFO">Property: 'Itaim Bibi'</msg>
+<arg>css=input[name="addressDistrict"]</arg>
+<arg>value</arg>
+<arg>equal</arg>
+<arg>${dog_walker}[district]</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the ``property`` of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-02-02T06:09:07.952620" elapsed="0.023986"/>
+</kw>
+<kw name="Get Property" owner="Browser">
+<msg time="2024-02-02T06:09:07.998592" level="INFO">Property: 'São Paulo/SP'</msg>
+<arg>css=input[name="addressCityUf"]</arg>
+<arg>value</arg>
+<arg>equal</arg>
+<arg>${dog_walker}[cityUf]</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the ``property`` of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-02-02T06:09:07.977606" elapsed="0.020986"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2024-02-02T06:09:07.999591" level="INFO">Fills the text '2000' in the given field.</msg>
+<arg>css=input[name=addressNumber]</arg>
+<arg>${dog_walker}[number]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2024-02-02T06:09:07.998592" elapsed="0.051968"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2024-02-02T06:09:08.052560" level="INFO">Fills the text 'Apto34' in the given field.</msg>
+<arg>css=input[name=addressDetails]</arg>
+<arg>${dog_walker}[details]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2024-02-02T06:09:08.051563" elapsed="0.028978"/>
+</kw>
+<kw name="Upload File By Selector" owner="Browser">
+<arg>css=input[type=file]</arg>
+<arg>${EXECDIR}/${dog_walker}[cnh]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Uploads file from `path` to file input element matched by selector.</doc>
+<status status="PASS" start="2024-02-02T06:09:08.080541" elapsed="0.100939"/>
+</kw>
+<arg>${dog_walker}</arg>
+<status status="PASS" start="2024-02-02T06:09:07.217073" elapsed="0.964407"/>
 </kw>
 <kw name="Submit signup form">
-<status status="NOT RUN" start="2024-02-01T15:16:28.987373" elapsed="0.000000"/>
+<kw name="Click" owner="Browser">
+<arg>css=.button-register</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-02-02T06:09:08.184478" elapsed="0.152906"/>
+</kw>
+<status status="PASS" start="2024-02-02T06:09:08.184478" elapsed="0.153904"/>
 </kw>
 <kw name="Popup should be">
-<arg>Recebemos o seu cadastro e em breve retornaremos o contato.</arg>
-<status status="NOT RUN" start="2024-02-01T15:16:28.988375" elapsed="0.000000"/>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2024-02-02T06:09:09.211845" level="INFO">Waited for Element with selector css=.swal2-html-container at state visible</msg>
+<arg>css=.swal2-html-container</arg>
+<arg>visible</arg>
+<arg>5</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2024-02-02T06:09:08.350375" elapsed="0.861470"/>
 </kw>
-<status status="FAIL" start="2024-02-01T15:15:48.947478" elapsed="40.040897">Error: browserType.launch: Timeout 30000ms exceeded.
-Call log:
-  [2m- &lt;launching&gt; F:\python312\Lib\site-packages\Browser\wrapper\node_modules\playwright-core\.local-browsers\chromium-1091\chrome-win\chrome.exe --disable-field-trial-config --disable-background-networking --enable-features=NetworkService,NetworkServiceInProcess --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=ImprovedCookieControls,LazyFrameLoading,GlobalMediaControls,DestroyProfileOnBrowserClose,MediaRouter,DialMediaRouteProvider,AcceptCHFrame,AutoExpandDetailsElement,CertificateTransparencyComponentUpdater,AvoidUnnecessaryBeforeUnloadCheckSync,Translate,HttpsUpgrades --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --enable-automation --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --headless --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --no-sandbox --user-data-dir=C:\Users\AJota\AppData\Local\Temp\playwright_chromiumdev_profile-V524Ow --remote-debugging-pipe --no-startup-window[22m
-[2m  - &lt;launched&gt; pid=15272[22m
-
-Tip: Use "Set Browser Timeout" for increasing the timeout or double check your locator as the targeted element(s) couldn't be found.</status>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-02-02T06:09:09.240828" level="INFO">Text: 'Recebemos o seu cadastro e em breve retornaremos o contato.'</msg>
+<arg>css=.swal2-html-container</arg>
+<arg>equal</arg>
+<arg>${expected_text}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-02-02T06:09:09.212846" elapsed="0.027982"/>
+</kw>
+<arg>Recebemos o seu cadastro e em breve retornaremos o contato.</arg>
+<status status="PASS" start="2024-02-02T06:09:08.349376" elapsed="0.891452"/>
+</kw>
+<status status="PASS" start="2024-02-02T06:09:05.059403" elapsed="4.183426"/>
 </test>
 <doc>Suite de testes de cadastro de dog walker</doc>
-<status status="FAIL" start="2024-02-01T15:15:46.749693" elapsed="42.291473"/>
+<status status="PASS" start="2024-02-02T06:09:02.675871" elapsed="6.673889"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="0" fail="1" skip="0" id="s1" name="Signup">Signup</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="Signup">Signup</stat>
 </suite>
 </statistics>
 <errors>
