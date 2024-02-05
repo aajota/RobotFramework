@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2024-02-02T06:09:02.671872" rpa="false" schemaversion="5">
-<suite id="s1" name="Signup" source="F:\RobotQAx\projects\walkdog-robot\signup.robot">
+<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2024-02-05T06:13:21.378202" rpa="false" schemaversion="5">
+<suite id="s1" name="Signup" source="F:\RobotQAx\projects\walkdog-robot\testes\signup.robot">
 <test id="s1-t1" name="Deve poder cadastrar um novo dog walker" line="8">
 <kw name="Create Dictionary" owner="BuiltIn">
-<msg time="2024-02-02T06:09:05.066398" level="INFO">${dog_walker} = {'name': 'Ajota', 'email': 'ajteste@gmail.com', 'cpf': '00000014141', 'cep': '04534011', 'street': 'Rua Joaquim Floriano', 'number': '2000', 'details': 'Apto34', 'district': 'Itaim Bibi', 'cityUf': 'S...</msg>
 <var>${dog_walker}</var>
 <arg>name=Ajota</arg>
 <arg>email=ajteste@gmail.com</arg>
@@ -16,210 +15,59 @@
 <arg>cityUf=São Paulo/SP</arg>
 <arg>cnh=toretto.jpg</arg>
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<status status="PASS" start="2024-02-02T06:09:05.065398" elapsed="0.001000"/>
+<status status="FAIL" start="2024-02-05T06:17:58.043846" elapsed="0.000000">Execution terminated by signal</status>
 </kw>
-<kw name="Go to signup page">
-<kw name="New Browser" owner="Browser">
-<msg time="2024-02-02T06:09:05.068396" level="INFO">{"browser": "chromium", "headless": true, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "F:\\RobotQAx\\projects\\walkdog-robot\\logs\\browser\\traces\\6558d0ab-5233-413f-9b9c-7d5189eec81e"}</msg>
-<msg time="2024-02-02T06:09:06.351607" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":true,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"F:\\RobotQAx\\projects\\walkdog-robot\\logs\\browser\\traces\\6558d0ab-5233-413f-9b9c-7d5189eec81e"}</msg>
-<arg>browser=chromium</arg>
-<arg>headless=True</arg>
-<tag>BrowserControl</tag>
-<tag>Setter</tag>
-<doc>Create a new playwright Browser with specified options.</doc>
-<status status="PASS" start="2024-02-02T06:09:05.067397" elapsed="1.284210"/>
+<kw name="Go to signup page" owner="signup">
+<status status="NOT RUN" start="2024-02-05T06:18:03.649530" elapsed="0.000000"/>
 </kw>
-<kw name="New Page" owner="Browser">
-<msg time="2024-02-02T06:09:07.101145" level="INFO">Successfully initialized new page object and opened url: https://walkdog.vercel.app/signup</msg>
-<msg time="2024-02-02T06:09:07.101145" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
-<arg>https://walkdog.vercel.app/signup</arg>
-<tag>BrowserControl</tag>
-<tag>Setter</tag>
-<doc>Open a new Page.</doc>
-<status status="PASS" start="2024-02-02T06:09:06.351607" elapsed="0.749538"/>
-</kw>
-<kw name="Wait For Elements State" owner="Browser">
-<msg time="2024-02-02T06:09:07.164106" level="INFO">Waited for Element with selector form h1 at state visible</msg>
-<arg>form h1</arg>
-<arg>visible</arg>
-<arg>5000</arg>
-<tag>PageContent</tag>
-<tag>Wait</tag>
-<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2024-02-02T06:09:07.102145" elapsed="0.061961"/>
-</kw>
-<kw name="Get Text" owner="Browser">
-<msg time="2024-02-02T06:09:07.216074" level="INFO">Text: 'Faça seu cadastro'</msg>
-<arg>form h1</arg>
-<arg>equal</arg>
-<arg>Faça seu cadastro</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2024-02-02T06:09:07.164106" elapsed="0.051968"/>
-</kw>
-<status status="PASS" start="2024-02-02T06:09:05.067397" elapsed="2.148677"/>
-</kw>
-<kw name="Fill signup form">
-<kw name="Fill Text" owner="Browser">
-<msg time="2024-02-02T06:09:07.218072" level="INFO">Fills the text 'Ajota' in the given field.</msg>
-<arg>css=input[name=name]</arg>
-<arg>${dog_walker}[name]</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2024-02-02T06:09:07.218072" elapsed="0.063963"/>
-</kw>
-<kw name="Fill Text" owner="Browser">
-<msg time="2024-02-02T06:09:07.283036" level="INFO">Fills the text 'ajteste@gmail.com' in the given field.</msg>
-<arg>css=input[name=email]</arg>
-<arg>${dog_walker}[email]</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2024-02-02T06:09:07.282035" elapsed="0.101935"/>
-</kw>
-<kw name="Fill Text" owner="Browser">
-<msg time="2024-02-02T06:09:07.384969" level="INFO">Fills the text '00000014141' in the given field.</msg>
-<arg>css=input[name=cpf]</arg>
-<arg>${dog_walker}[cpf]</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2024-02-02T06:09:07.384969" elapsed="0.037978"/>
-</kw>
-<kw name="Fill Text" owner="Browser">
-<msg time="2024-02-02T06:09:07.423952" level="INFO">Fills the text '04534011' in the given field.</msg>
-<arg>css=input[name=cep]</arg>
-<arg>${dog_walker}[cep]</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2024-02-02T06:09:07.422947" elapsed="0.042974"/>
-</kw>
-<kw name="Click" owner="Browser">
-<arg>css=input[value="Buscar CEP"][type="button"]</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2024-02-02T06:09:07.465921" elapsed="0.088944"/>
-</kw>
-<kw name="Get Property" owner="Browser">
-<msg time="2024-02-02T06:09:07.951621" level="INFO">Property: 'Rua Joaquim Floriano'</msg>
-<arg>css=input[name="addressStreet"]</arg>
-<arg>value</arg>
-<arg>equal</arg>
-<arg>${dog_walker}[street]</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns the ``property`` of the element found by ``selector``.</doc>
-<status status="PASS" start="2024-02-02T06:09:07.554865" elapsed="0.396756"/>
-</kw>
-<kw name="Get Property" owner="Browser">
-<msg time="2024-02-02T06:09:07.976606" level="INFO">Property: 'Itaim Bibi'</msg>
-<arg>css=input[name="addressDistrict"]</arg>
-<arg>value</arg>
-<arg>equal</arg>
-<arg>${dog_walker}[district]</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns the ``property`` of the element found by ``selector``.</doc>
-<status status="PASS" start="2024-02-02T06:09:07.952620" elapsed="0.023986"/>
-</kw>
-<kw name="Get Property" owner="Browser">
-<msg time="2024-02-02T06:09:07.998592" level="INFO">Property: 'São Paulo/SP'</msg>
-<arg>css=input[name="addressCityUf"]</arg>
-<arg>value</arg>
-<arg>equal</arg>
-<arg>${dog_walker}[cityUf]</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns the ``property`` of the element found by ``selector``.</doc>
-<status status="PASS" start="2024-02-02T06:09:07.977606" elapsed="0.020986"/>
-</kw>
-<kw name="Fill Text" owner="Browser">
-<msg time="2024-02-02T06:09:07.999591" level="INFO">Fills the text '2000' in the given field.</msg>
-<arg>css=input[name=addressNumber]</arg>
-<arg>${dog_walker}[number]</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2024-02-02T06:09:07.998592" elapsed="0.051968"/>
-</kw>
-<kw name="Fill Text" owner="Browser">
-<msg time="2024-02-02T06:09:08.052560" level="INFO">Fills the text 'Apto34' in the given field.</msg>
-<arg>css=input[name=addressDetails]</arg>
-<arg>${dog_walker}[details]</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2024-02-02T06:09:08.051563" elapsed="0.028978"/>
-</kw>
-<kw name="Upload File By Selector" owner="Browser">
-<arg>css=input[type=file]</arg>
-<arg>${EXECDIR}/${dog_walker}[cnh]</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Uploads file from `path` to file input element matched by selector.</doc>
-<status status="PASS" start="2024-02-02T06:09:08.080541" elapsed="0.100939"/>
-</kw>
+<kw name="Fill signup form" owner="signup">
 <arg>${dog_walker}</arg>
-<status status="PASS" start="2024-02-02T06:09:07.217073" elapsed="0.964407"/>
+<status status="NOT RUN" start="2024-02-05T06:18:03.650531" elapsed="0.000000"/>
 </kw>
-<kw name="Submit signup form">
-<kw name="Click" owner="Browser">
-<arg>css=.button-register</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2024-02-02T06:09:08.184478" elapsed="0.152906"/>
+<kw name="Submit signup form" owner="signup">
+<status status="NOT RUN" start="2024-02-05T06:18:03.651530" elapsed="0.000000"/>
 </kw>
-<status status="PASS" start="2024-02-02T06:09:08.184478" elapsed="0.153904"/>
-</kw>
-<kw name="Popup should be">
-<kw name="Wait For Elements State" owner="Browser">
-<msg time="2024-02-02T06:09:09.211845" level="INFO">Waited for Element with selector css=.swal2-html-container at state visible</msg>
-<arg>css=.swal2-html-container</arg>
-<arg>visible</arg>
-<arg>5</arg>
-<tag>PageContent</tag>
-<tag>Wait</tag>
-<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2024-02-02T06:09:08.350375" elapsed="0.861470"/>
-</kw>
-<kw name="Get Text" owner="Browser">
-<msg time="2024-02-02T06:09:09.240828" level="INFO">Text: 'Recebemos o seu cadastro e em breve retornaremos o contato.'</msg>
-<arg>css=.swal2-html-container</arg>
-<arg>equal</arg>
-<arg>${expected_text}</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2024-02-02T06:09:09.212846" elapsed="0.027982"/>
-</kw>
+<kw name="Popup should be" owner="signup">
 <arg>Recebemos o seu cadastro e em breve retornaremos o contato.</arg>
-<status status="PASS" start="2024-02-02T06:09:08.349376" elapsed="0.891452"/>
+<status status="NOT RUN" start="2024-02-05T06:18:03.652529" elapsed="0.000000"/>
 </kw>
-<status status="PASS" start="2024-02-02T06:09:05.059403" elapsed="4.183426"/>
+<status status="FAIL" start="2024-02-05T06:17:58.036848" elapsed="5.615681">Execution terminated by signal</status>
 </test>
 <doc>Suite de testes de cadastro de dog walker</doc>
-<status status="PASS" start="2024-02-02T06:09:02.675871" elapsed="6.673889"/>
+<status status="FAIL" start="2024-02-05T06:13:21.401188" elapsed="282.407696"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Signup">Signup</stat>
+<stat pass="0" fail="1" skip="0" id="s1" name="Signup">Signup</stat>
 </suite>
 </statistics>
 <errors>
+<msg time="2024-02-05T06:17:07.403044" level="ERROR">Error in file 'F:\RobotQAx\projects\walkdog-robot\resources\base.resource' on line 4: Importing library 'Browser' failed: ImportError: DLL load failed while importing cygrpc: Uma rotina de inicialização da biblioteca de vínculo dinâmico (DLL) falhou.
+Traceback (most recent call last):
+  File "F:\python312\Lib\site-packages\Browser\__init__.py", line 16, in &lt;module&gt;
+    from .browser import Browser
+  File "F:\python312\Lib\site-packages\Browser\browser.py", line 37, in &lt;module&gt;
+    from .keywords import (
+  File "F:\python312\Lib\site-packages\Browser\keywords\__init__.py", line 20, in &lt;module&gt;
+    from .getters import Getters
+  File "F:\python312\Lib\site-packages\Browser\keywords\getters.py", line 18, in &lt;module&gt;
+    import grpc  # type: ignore
+    ^^^^^^^^^^^
+  File "F:\python312\Lib\site-packages\grpc\__init__.py", line 22, in &lt;module&gt;
+    from grpc import _compression
+  File "F:\python312\Lib\site-packages\grpc\_compression.py", line 20, in &lt;module&gt;
+    from grpc._cython import cygrpc
+PYTHONPATH:
+  F:\python312\Scripts\robot.exe
+  F:\python312\python312.zip
+  F:\python312\DLLs
+  F:\python312\Lib
+  F:\python312
+  F:\python312\Lib\site-packages</msg>
 </errors>
 </robot>
