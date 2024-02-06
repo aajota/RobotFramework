@@ -37,3 +37,6 @@ Popup should be
     Wait For Elements State        css=.swal2-html-container        visible    5        
 
     Get Text        css=.swal2-html-container        equal        ${expected_text}
+
+
+    #Terça-feira
