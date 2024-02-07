@@ -39,4 +39,3 @@ Popup should be
     Get Text        css=.swal2-html-container        equal        ${expected_text}
 
 
-    #Terça-feira
