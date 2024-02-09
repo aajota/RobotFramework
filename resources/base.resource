@@ -13,3 +13,6 @@ Start session
 
     Wait for Elements State    css=h1 >> text=Cuidado e diversão em cada passo
     ...        visibal    5
+
+    Finish session
+        Take Screenshot    fullPage=False
