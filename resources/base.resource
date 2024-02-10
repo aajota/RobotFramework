@@ -8,11 +8,11 @@ Resource        actions/signup.resource
 *** Keywords ***
 
 Start session
-    New Browser    browser=chromium    headless=False
+    New Browser    browser=chromium    headless=True
     New Page    https://walkdog.vercel.app
 
     Wait for Elements State    css=h1 >> text=Cuidado e diversão em cada passo
     ...        visibal    5
 
     Finish session
-        Take Screenshot    fullPage=False
+        Take Screenshot    fullPage=True
