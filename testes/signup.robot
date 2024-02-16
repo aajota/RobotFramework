@@ -61,5 +61,5 @@ Deve poder cadastrar um novo dog walker
     Go to signup page
     Fill signup form        ${dog_walker}
     Submit signup form     
-    Alert should be    CPF inválido
+    Alert should be    CPF inválid
     Finish session
