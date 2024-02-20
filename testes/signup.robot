@@ -63,3 +63,25 @@ Deve poder cadastrar um novo dog walker
     Submit signup form     
     Alert should be    CPF inválido
     Finish session
+
+     Não deve cadastrar se o cpf for incorreto
+    [Tags]    cpf_invExcluir
+
+    ${dog_walker}        Create Dictionary        
+    ...    name=Ajota        
+    ...    email=ajteste@gmail.com        
+    ...    cpf=00000014141aa        
+    ...    cep=04534011        
+    ...    street=Rua Joaquim Floriano        
+    ...    number=2000        
+    ...    details=Apto34        
+    ...    district=Itaim Bibi        
+    ...    cityUf=São Paulo/SP        
+    ...    cnh=toretto.jpg                         
+
+    Start session
+    Go to signup page
+    Fill signup form        ${dog_walker}
+    Submit signup form     
+    Alert should be    CPF inválido
+    Finish session
