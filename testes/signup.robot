@@ -27,7 +27,7 @@ Deve poder cadastrar um novo dog walker
     Finish session
 
     Não deve cadastrar se os campos obrigatórios não forem preenchidos
-    [tags]        required
+    [tags]    required
 
     Start session
     Go to signup page
@@ -42,13 +42,13 @@ Deve poder cadastrar um novo dog walker
 
     Finish session
 
-    Não deve cadastrar se o cpf for incorreto
-    [Tags]    cpf_inv
+    Não deve poder cadastrar se o cpf for inválido
+        [Tags]    cpf_inv
 
     ${dog_walker}        Create Dictionary        
-    ...    name=Ajota        
+    ...    name=Junior Lima       
     ...    email=ajteste@gmail.com        
-    ...    cpf=00000014141aa        
+    ...    cpf=000000141aa        
     ...    cep=04534011        
     ...    street=Rua Joaquim Floriano        
     ...    number=2000        
@@ -60,28 +60,8 @@ Deve poder cadastrar um novo dog walker
     Start session
     Go to signup page
     Fill signup form        ${dog_walker}
-    Submit signup form     
-    Alert should be    CPF inválido
+    Submit signup form
+    Alert should be    CPF inválido      
     Finish session
 
-     Não deve cadastrar se o cpf for incorreto
-    [Tags]    cpf_invExcluir
-
-    ${dog_walker}        Create Dictionary        
-    ...    name=Ajota        
-    ...    email=ajteste@gmail.com        
-    ...    cpf=00000014141aa        
-    ...    cep=04534011        
-    ...    street=Rua Joaquim Floriano        
-    ...    number=2000        
-    ...    details=Apto34        
-    ...    district=Itaim Bibi        
-    ...    cityUf=São Paulo/SP        
-    ...    cnh=toretto.jpg                         
-
-    Start session
-    Go to signup page
-    Fill signup form        ${dog_walker}
-    Submit signup form     
-    Alert should be    CPF inválido
-    Finish session
+   
