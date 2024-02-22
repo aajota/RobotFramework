@@ -3,6 +3,8 @@ Documentation    Suite de testes de cadastro de dog walker
 
 Resource        ../resources/base.resource
 
+Teste Setup        Start session
+Test Teardown        Finish session
 *** Test Cases ***
 
 Deve poder cadastrar um novo dog walker
@@ -19,17 +21,17 @@ Deve poder cadastrar um novo dog walker
     ...    cityUf=São Paulo/SP        
     ...    cnh=toretto.jpg                         
 
-    Start session
+  
     Go to signup page
     Fill signup form        ${dog_walker}
     Submit signup form
     Popup should be        Recebemos o seu cadastro e em breve retornaremos o contato.        
-    Finish session
+ 
 
     Não deve cadastrar se os campos obrigatórios não forem preenchidos
     [tags]    required
 
-    Start session
+  
     Go to signup page
     Submit signup form
 
@@ -40,7 +42,7 @@ Deve poder cadastrar um novo dog walker
     Alert should be    Informe um número maior que zero
     Alert should be    Adcione um documento com foto (RG ou CNH)
 
-    Finish session
+   
 
     Não deve poder cadastrar se o cpf for inválido
         [Tags]    cpf_inv
@@ -57,11 +59,11 @@ Deve poder cadastrar um novo dog walker
     ...    cityUf=São Paulo/SP        
     ...    cnh=toretto.jpg                         
 
-    Start session
+  
     Go to signup page
     Fill signup form        ${dog_walker}
     Submit signup form
     Alert should be    CPF inválido      
-    Finish session
+    
 
    
