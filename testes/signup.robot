@@ -8,6 +8,7 @@ Test Teardown        Finish session
 *** Test Cases ***
 
 Deve poder cadastrar um novo dog walker
+    [Tags]    smoke
 
     ${dog_walker}        Create Dictionary        
     ...    name=Junior Lima       
