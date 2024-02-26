@@ -64,6 +64,30 @@ Deve poder cadastrar um novo dog walker
     Fill signup form        ${dog_walker}
     Submit signup form
     Alert should be    CPF inválido      
+
+    Deve poder cadastrar um novo dog walker que sabe cuidade de pets
+    [Tags]    aservice
+
+    ${dog_walker}        Create Dictionary        
+    ...    name=Dominic Toreto       
+    ...    email=toretoo@gmail.com        
+    ...    cpf=00000014141        
+    ...    cep=04534011        
+    ...    street=Rua Joaquim Floriano        
+    ...    number=2000        
+    ...    details=Apto34        
+    ...    district=Itaim Bibi        
+    ...    cityUf=São Paulo/SP        
+    ...    cnh=toretto.jpg 
+    ...    additionl_service=Cuidar   
+                            
+    Go to signup page
+    Fill signup form        ${dog_walker}
+    Submit signup form
+    Popup should be        Recebemos o seu cadastro e em breve retornaremos o contato.        
+
+    
+ 
     
 
    
