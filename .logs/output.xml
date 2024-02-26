@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2024-02-26T14:38:44.639934" rpa="false" schemaversion="5">
+<suite id="s1" name="Signup" source="F:\RobotQAx\projects\walkdog-robot\testes\signup.robot">
+<test id="s1-t1" name="Deve poder cadastrar um novo dog walker" line="10">
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2024-02-26T14:38:46.905348" level="INFO">${dog_walker} = {'name': 'Junior Lima', 'email': 'ajteste@gmail.com', 'cpf': '00000014141', 'cep': '04534011', 'street': 'Rua Joaquim Floriano', 'number': '2000', 'details': 'Apto34', 'district': 'Itaim Bibi', 'cityU...</msg>
+<var>${dog_walker}</var>
+<arg>name=Junior Lima</arg>
+<arg>email=ajteste@gmail.com</arg>
+<arg>cpf=00000014141</arg>
+<arg>cep=04534011</arg>
+<arg>street=Rua Joaquim Floriano</arg>
+<arg>number=2000</arg>
+<arg>details=Apto34</arg>
+<arg>district=Itaim Bibi</arg>
+<arg>cityUf=São Paulo/SP</arg>
+<arg>cnh=toretto.jpg</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2024-02-26T14:38:46.904349" elapsed="0.000999"/>
+</kw>
+<kw name="Go to signup page" owner="signup">
+<kw name="Click" owner="Browser">
+<msg time="2024-02-26T14:38:47.021277" level="INFO">Keyword 'Take Screenshot  fail-screenshot-{index}' could not be run on failure:
+Error: Tried to take screenshot, but no page was open.</msg>
+<msg time="2024-02-26T14:38:47.021277" level="INFO">See also file:///F:/RobotQAx/projects/walkdog-robot/.logs/playwright-log.txt for additional details.</msg>
+<msg time="2024-02-26T14:38:47.022277" level="FAIL">Error: Could not find active page</msg>
+<arg>css=a[href="/signup"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="FAIL" start="2024-02-26T14:38:46.906348" elapsed="0.124922">Error: Could not find active page</status>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<arg>form h1</arg>
+<arg>visible</arg>
+<arg>5000</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="NOT RUN" start="2024-02-26T14:38:47.031270" elapsed="0.001002"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<arg>form h1</arg>
+<arg>equal</arg>
+<arg>Faça seu cadastro</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="NOT RUN" start="2024-02-26T14:38:47.032272" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-02-26T14:38:46.906348" elapsed="0.125924">Error: Could not find active page</status>
+</kw>
+<kw name="Fill signup form" owner="signup">
+<arg>${dog_walker}</arg>
+<status status="NOT RUN" start="2024-02-26T14:38:47.033271" elapsed="0.000000"/>
+</kw>
+<kw name="Submit signup form" owner="signup">
+<status status="NOT RUN" start="2024-02-26T14:38:47.034270" elapsed="0.000000"/>
+</kw>
+<kw name="Popup should be" owner="signup">
+<arg>Recebemos o seu cadastro e em breve retornaremos o contato.</arg>
+<status status="NOT RUN" start="2024-02-26T14:38:47.035268" elapsed="0.000000"/>
+</kw>
+<kw name="Finish session" type="TEARDOWN">
+<msg time="2024-02-26T14:38:47.038266" level="FAIL">No keyword with name 'Finish session' found.</msg>
+<status status="FAIL" start="2024-02-26T14:38:47.038266" elapsed="0.000000">No keyword with name 'Finish session' found.</status>
+</kw>
+<tag>smoke</tag>
+<status status="FAIL" start="2024-02-26T14:38:46.898352" elapsed="0.139914">Error: Could not find active page
+
+Also teardown failed:
+No keyword with name 'Finish session' found.</status>
+</test>
+<doc>Suite de testes de cadastro de dog walker</doc>
+<status status="FAIL" start="2024-02-26T14:38:44.644936" elapsed="2.462288"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">smoke</stat>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Signup">Signup</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-02-26T14:38:44.626947" level="ERROR">Error in file 'F:\RobotQAx\projects\walkdog-robot\testes\signup.robot' on line 6: Non-existing setting 'Teste Setup'. Did you mean:
+    Test Setup
+    Suite Setup</msg>
+</errors>
+</robot>

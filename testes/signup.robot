@@ -29,8 +29,8 @@ Deve poder cadastrar um novo dog walker
     Popup should be        Recebemos o seu cadastro e em breve retornaremos o contato.        
  
 
-    Não deve cadastrar se os campos obrigatórios não forem preenchidos
-    [tags]    required
+Não deve cadastrar se os campos obrigatórios não forem preenchidos
+    [Tags]    required
 
   
     Go to signup page
@@ -43,9 +43,8 @@ Deve poder cadastrar um novo dog walker
     Alert should be    Informe um número maior que zero
     Alert should be    Adcione um documento com foto (RG ou CNH)
 
-   
 
-    Não deve poder cadastrar se o cpf for inválido
+Não deve poder cadastrar se o cpf for inválido
         [Tags]    cpf_inv
 
     ${dog_walker}        Create Dictionary        
@@ -60,13 +59,12 @@ Deve poder cadastrar um novo dog walker
     ...    cityUf=São Paulo/SP        
     ...    cnh=toretto.jpg                         
 
-  
     Go to signup page
     Fill signup form        ${dog_walker}
     Submit signup form
     Alert should be    CPF inválido      
 
-    Deve poder cadastrar um novo dog walker que sabe cuidade de pets
+Deve poder cadastrar um novo dog walker que sabe cuidade de pets
     [Tags]    aservice
 
     ${dog_walker}        Create Dictionary        
@@ -87,7 +85,7 @@ Deve poder cadastrar um novo dog walker
     Submit signup form
     Popup should be        Recebemos o seu cadastro e em breve retornaremos o contato.        
 
-       Deve poder cadastrar um novo dog walker que sabe adestrar de pets
+Deve poder cadastrar um novo dog walker que sabe adestrar de pets
     [Tags]    aservice
 
     ${dog_walker}        Create Dictionary        

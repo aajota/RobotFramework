@@ -1,0 +1,49 @@
+{"level":30,"time":"2024-02-26T17:38:46.185Z","pid":2716,"hostname":"DESKTOP-G5M2MM2","msg":"Listening on 57660"}
+{"level":30,"time":"2024-02-26T17:38:46.895Z","pid":2716,"hostname":"DESKTOP-G5M2MM2","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-26T17:38:46.897Z","pid":2716,"hostname":"DESKTOP-G5M2MM2","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-26T17:38:46.902Z","pid":2716,"hostname":"DESKTOP-G5M2MM2","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-26T17:38:46.902Z","pid":2716,"hostname":"DESKTOP-G5M2MM2","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-26T17:38:46.911Z","pid":2716,"hostname":"DESKTOP-G5M2MM2","msg":"Start of node method click"}
+================= Original suppressed error =================
+Error: Could not find active page
+    at exists (F:\python312\Lib\site-packages\Browser\wrapper\index.js:8609:11)
+    at findLocator (F:\python312\Lib\site-packages\Browser\wrapper\index.js:8566:3)
+    at internalClick (F:\python312\Lib\site-packages\Browser\wrapper\index.js:9656:25)
+    at click (F:\python312\Lib\site-packages\Browser\wrapper\index.js:9639:24)
+    at PlaywrightServer.click (F:\python312\Lib\site-packages\Browser\wrapper\index.js:10603:34)
+    at handleUnary (F:\python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:852:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+=============================================================
+{"level":30,"time":"2024-02-26T17:38:46.912Z","pid":2716,"hostname":"DESKTOP-G5M2MM2","msg":"Error of node method  click"}
+{"level":30,"time":"2024-02-26T17:38:46.981Z","pid":2716,"hostname":"DESKTOP-G5M2MM2","msg":"Start of node method takeScreenshot"}
+================= Original suppressed error =================
+Error: Tried to take screenshot, but no page was open.
+    at exists (F:\python312\Lib\site-packages\Browser\wrapper\index.js:8609:11)
+    at takeScreenshot (F:\python312\Lib\site-packages\Browser\wrapper\index.js:8653:3)
+    at PlaywrightServer.takeScreenshot (F:\python312\Lib\site-packages\Browser\wrapper\index.js:10603:34)
+    at handleUnary (F:\python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:852:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+=============================================================
+{"level":30,"time":"2024-02-26T17:38:46.982Z","pid":2716,"hostname":"DESKTOP-G5M2MM2","msg":"Error of node method  takeScreenshot"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (F:\python312\Lib\site-packages\Browser\wrapper\index.js:9968:15)
+    at PlaywrightServer.getActiveBrowser (F:\python312\Lib\site-packages\Browser\wrapper\index.js:10588:59)
+    at PlaywrightServer.setTimeout (F:\python312\Lib\site-packages\Browser\wrapper\index.js:10838:57)
+    at handleUnary (F:\python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:852:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+=============================================================
+{"level":30,"time":"2024-02-26T17:38:47.102Z","pid":2716,"hostname":"DESKTOP-G5M2MM2","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-26T17:38:47.102Z","pid":2716,"hostname":"DESKTOP-G5M2MM2","msg":"End of node method getBrowserCatalog"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (F:\python312\Lib\site-packages\Browser\wrapper\index.js:9968:15)
+    at PlaywrightServer.getActiveBrowser (F:\python312\Lib\site-packages\Browser\wrapper\index.js:10588:59)
+    at PlaywrightServer.setTimeout (F:\python312\Lib\site-packages\Browser\wrapper\index.js:10838:57)
+    at handleUnary (F:\python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:852:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+=============================================================
+{"level":30,"time":"2024-02-26T17:38:47.195Z","pid":2716,"hostname":"DESKTOP-G5M2MM2","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-26T17:38:47.195Z","pid":2716,"hostname":"DESKTOP-G5M2MM2","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-02-26T17:38:47.387Z","pid":2716,"hostname":"DESKTOP-G5M2MM2","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2024-02-26T17:38:47.388Z","pid":2716,"hostname":"DESKTOP-G5M2MM2","msg":"End of node method closeAllBrowsers"}

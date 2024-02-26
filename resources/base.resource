@@ -15,4 +15,4 @@ Start session
     ...        visibal    5
 
     Finish session
-        Take Screenshot    fullPage=True
+        Take Screenshot    fullPage=False
