@@ -77,11 +77,11 @@ Deve poder cadastrar um novo dog walker que sabe cuidade de pets
     ...    details=Apto34        
     ...    district=Itaim Bibi        
     ...    cityUf=São Paulo/SP        
-    ...    cnh=toretto.jpg 
-    ...    additionl_service=Cuidar   
+    ...    cnh=toretto.jpg  
                             
     Go to signup page
     Fill signup form        ${dog_walker}
+    Additional Service    Cuidar
     Submit signup form
     Popup should be        Recebemos o seu cadastro e em breve retornaremos o contato.        
 
@@ -99,10 +99,10 @@ Deve poder cadastrar um novo dog walker que sabe adestrar de pets
     ...    district=Itaim Bibi        
     ...    cityUf=São Paulo/SP        
     ...    cnh=toretto.jpg 
-    ...    additionl_service=Adestrar   
                             
     Go to signup page
     Fill signup form        ${dog_walker}
+    Additional Service    Adestrar
     Submit signup form
     Popup should be        Recebemos o seu cadastro e em breve retornaremos o contato.       
 
